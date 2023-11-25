@@ -1,0 +1,49 @@
+### To Test
+POST http://localhost:3000/test
+
+### To Login
+POST http://localhost:3000/api/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "acer@gmail.com",
+    "password": "acer"
+}
+
+### To Signup
+POST http://localhost:3000/api/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"vishnu",
+    "email": "vishnuarjun512@gmail.com",
+    "password":"acer"
+}
+
+### To Create New Task
+@UID = Vishnu
+POST http://localhost:3000/api/tasks/create/?userId={{UID}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "taskName": "Task 2"
+}
+
+### To Get all Tasks
+GET  http://localhost:3000/api/tasks/get
+
+### To Get Task By ID
+POST  http://localhost:3000/api/tasks/get/Vinayak
+
+### To Update Task by ID
+POST  http://localhost:3000/api/tasks/update/Vinayak
+Content-Type: application/json
+
+{
+    "taskName":"Task 2",
+    "marked":true
+}
+
+### To Delete Task by ID
+DELETE http://localhost:3000/api/tasks/delete/Vinyak
+

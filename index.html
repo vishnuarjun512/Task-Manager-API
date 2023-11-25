@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="register-form hide">
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <a id="submit1">Register</a>
+            <a class="toLogin">Already registered???</a>
+        </div>
+        <div class="login-form ">
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <a id="submit2">Login</a>
+            <a class="toRegister">Not registered?</a>
+        </div>
+    </div>
+    <div class="main hide">
+        Welcome
+        <button class="signout">Signout</button>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
